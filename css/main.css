@@ -1,0 +1,65 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  float: left;
+}
+
+.logo {
+  font-size: 1.75em;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.under {
+  white-space: nowrap;
+}
+
+.active {
+  border-bottom: #fff 2px solid;
+  animation-name: border;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+@keyframes border {
+  0% {
+    border-bottom: solid #6285F8 1px;
+  }
+  100% {
+    border-bottom: #fff 2px solid;
+  }
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+ul a:nth-child(2) {
+  margin: 0 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  padding: 10px 25px;
+  background: #6285F8;
+  text-align: center;
+  color: #fff;
+  border-bottom: 3px solid black;
+}
