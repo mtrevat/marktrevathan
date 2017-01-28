@@ -23,6 +23,7 @@ body {
 
 .active {
   border-bottom: #fff 2px solid;
+  border-left: solid #6285F8 2px;
   animation-name: border;
   animation-duration: .5s;
   animation-timing-function: ease-in;
@@ -31,10 +32,12 @@ body {
 
 @keyframes border {
   0% {
-    border-bottom: solid #6285F8 1px;
+    border-bottom: solid #6285F8 2px;
+    color: #6285F8;
   }
   100% {
     border-bottom: #fff 2px solid;
+    color: #fff;
   }
 }
 
@@ -49,6 +52,7 @@ ul a:nth-child(2) {
 
 li {
   display: inline-block;
+  border-left: #fff solid 2px;
 }
 
 a {
@@ -62,4 +66,9 @@ nav {
   text-align: center;
   color: #fff;
   border-bottom: 3px solid black;
+}
+
+nav img {
+  float: right;
+  margin-top: 10px;
 }
