@@ -1,3 +1,12 @@
+
+/**********************
+Elements
+**********************/
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-size: 16px;
@@ -11,67 +20,14 @@ body {
   background-color: #E8E3DC;
 }
 
-.square {
-  width: 25px;
-  height: 40px;
-  background-color: #DD4165;
-}
-
 nav {
   color: #DD4165;
   font-size: 1.25em;
 }
 
-h1 {
-  font-size: 3em;
-  margin-top: 40px;
-  margin-bottom: -5px;
-  display: inline-block;
-}
-
-section {
-  color: #111F27;
-  border-bottom: #DD4165 2px solid;
-}
-
-.active {
-  border-bottom: #DD4165 2px solid;
-  animation-name: border;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-}
-
-@keyframes border {
-  0% {
-    border-bottom: solid #E8E3DC 2px;
-    color: #DD4165;
-  }
-  100% {
-    border-bottom: #DD4165 2px solid;
-    color: #DD4165;
-  }
-}
-
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
-  margin-top: 5%;
-  margin-left: 10%;
-  width: 30%;
+nav ul {
   float: left;
-}
-
-img {
-  display: inline-block;
-  float: right;
-  margin-top: 10%;
-  width: 50%;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  width: 100%;
 }
 
 nav ul,
@@ -81,17 +37,44 @@ nav li {
   padding: 0;
 }
 
-nav ul {
-  float: left;
-  width: 100%;
-}
-
 nav ul a:nth-child(2) {
   margin: 0 20px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: -5px;
+  display: inline-block;
+  border-bottom: #DD4165 2px solid;
+}
+
+section {
+  color: #111F27;
+  border-bottom: #DD4165 2px solid;
+}
+
 p {
   line-height: 2em;
+}
+
+.wrapper p::first-letter {
+  font-size: 10em;
+  color: #BC8453;
+  float: left;
+  line-height: 105px;
+}
+
+img {
+  display: inline-block;
+  float: right;
+  margin-top: 10%;
+  width: 50%;
 }
 
 .push,
@@ -108,4 +91,57 @@ footer {
 footer span {
   display: inline-block;
   padding: 5px 25%;
+}
+
+footer span a {
+  color: #1DA1F2;
+}
+
+/**********************
+Classes
+**********************/
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 30%;
+  float: left;
+}
+
+.square {
+  width: 25px;
+  height: 40px;
+  background-color: #DD4165;
+}
+
+.active {
+  border-bottom: #DD4165 2px solid;
+  animation-name: border;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+/**********************
+Animations
+**********************/
+
+@keyframes border {
+  0% {
+    border-bottom: solid #E8E3DC 2px;
+    color: #DD4165;
+  }
+  100% {
+    border-bottom: #DD4165 2px solid;
+    color: #DD4165;
+  }
+}
+/**********************
+Media Queries
+**********************/
+
+@media () {
+
 }
