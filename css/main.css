@@ -1,57 +1,72 @@
+html,
 body {
   font-size: 16px;
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Playfair Display', serif;
 }
 
-.title {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  float: left;
+body {
+  background-color: #E8E3DC;
 }
 
-.logo {
-  font-size: 1.75em;
-  flex-grow: 1;
-  white-space: nowrap;
+.square {
+  width: 25px;
+  height: 40px;
+  background-color: #DD4165;
 }
 
-.under {
-  white-space: nowrap;
+nav {
+  color: #DD4165;
+  font-size: 1.25em;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: -5px;
+  display: inline-block;
+}
+
+section {
+  color: #111F27;
+  border-bottom: #DD4165 2px solid;
 }
 
 .active {
-  border-bottom: #fff 2px solid;
-  border-left: solid #6285F8 2px;
+  border-bottom: #DD4165 2px solid;
   animation-name: border;
-  animation-duration: .5s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
 }
 
 @keyframes border {
   0% {
-    border-bottom: solid #6285F8 2px;
-    color: #6285F8;
+    border-bottom: solid #E8E3DC 2px;
+    color: #DD4165;
   }
   100% {
-    border-bottom: #fff 2px solid;
-    color: #fff;
+    border-bottom: #DD4165 2px solid;
+    color: #DD4165;
   }
 }
 
-ul {
-  list-style: none;
-  display: inline-block;
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 30%;
+  float: left;
 }
 
-ul a:nth-child(2) {
-  margin: 0 20px;
-}
-
-li {
+img {
   display: inline-block;
+  float: right;
+  margin-top: 10%;
+  width: 50%;
 }
 
 a {
@@ -59,15 +74,38 @@ a {
   color: inherit;
 }
 
-nav {
-  padding: 10px 25px;
-  background: #6285F8;
-  text-align: center;
-  color: #fff;
-  border-bottom: 3px solid black;
+nav ul,
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
 }
 
-nav img {
-  float: right;
-  margin-top: 10px;
+nav ul {
+  float: left;
+  width: 100%;
+}
+
+nav ul a:nth-child(2) {
+  margin: 0 20px;
+}
+
+p {
+  line-height: 2em;
+}
+
+.push,
+footer {
+  height: 50px;
+}
+
+footer {
+  background-color: #E8E3DC;
+  clear: both;
+  width: 40%;
+}
+
+footer span {
+  display: inline-block;
+  padding: 5px 25%;
 }
