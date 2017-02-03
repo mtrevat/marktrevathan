@@ -1,0 +1,169 @@
+
+/**********************
+Elements
+**********************/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background-color: #E8E3DC;
+}
+
+nav {
+  color: #DD4165;
+  font-size: 1.25em;
+}
+
+nav ul {
+  float: left;
+  width: 100%;
+}
+
+nav ul,
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+
+nav ul a:nth-child(2) {
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: -5px;
+  display: inline-block;
+  border-bottom: #DD4165 2px solid;
+}
+
+section {
+  color: #111F27;
+  border-bottom: #DD4165 2px solid;
+}
+
+section span {
+  display: block;
+}
+
+p {
+  line-height: 2em;
+}
+
+.wrapper p::first-letter {
+  font-size: 10em;
+  color: #BC8453;
+  float: left;
+  line-height: 105px;
+}
+
+img {
+  display: inline-block;
+  float: right;
+  margin-top: 10%;
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+  border: 2px #BC8453 solid;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.push,
+footer {
+  height: 50px;
+}
+
+footer {
+  background-color: #E8E3DC;
+  clear: both;
+  width: 40%;
+}
+
+footer span {
+  display: inline-block;
+  padding: 5px 25%;
+}
+
+/**********************
+Classes
+**********************/
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 30%;
+  float: left;
+}
+
+.square {
+  width: 25px;
+  height: 40px;
+  background-color: #DD4165;
+}
+
+.active {
+  border-bottom: #DD4165 2px solid;
+  animation-name: border;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+.soon {
+  display: block;
+  margin-bottom: 500px;
+}
+
+.contact-link {
+  color: #1DA1F2;
+}
+
+.first-item {
+  display: block;
+  margin-top: 20px;
+}
+
+.last-item {
+  display: block;
+  margin-bottom: 500px;
+}
+
+/**********************
+Animations
+**********************/
+
+@keyframes border {
+  0% {
+    border-bottom: solid #E8E3DC 2px;
+    color: #DD4165;
+  }
+  100% {
+    border-bottom: #DD4165 2px solid;
+    color: #DD4165;
+  }
+}
+/**********************
+Media Queries
+**********************/
+
+@media () {
+
+}
