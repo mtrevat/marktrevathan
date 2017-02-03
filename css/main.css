@@ -75,6 +75,9 @@ img {
   float: right;
   margin-top: 10%;
   width: 50%;
+  border-radius: 10px 0 0 10px;
+  border: 2px #BC8453 solid;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .push,
