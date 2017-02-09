@@ -87,16 +87,16 @@ img {
 .push,
 footer {
   height: 50px;
+  clear: both;
 }
 
 footer {
   background-color: #E8E3DC;
-  clear: both;
   width: 40%;
 }
 
 footer span {
-  display: inline-block;
+  display: block;
   padding: 5px 25%;
 }
 
