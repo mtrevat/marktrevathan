@@ -35,6 +35,12 @@ nav li {
   list-style: none;
   display: inline-block;
   padding: 0;
+  transition: 1s;
+}
+
+nav li:hover {
+  color: #B22222;
+  border-color: #B22222;
 }
 
 nav ul a:nth-child(2) {
