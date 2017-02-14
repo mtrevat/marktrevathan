@@ -79,7 +79,7 @@ p {
   line-height: 105px;
 }
 
-img {
+.tugboat {
   display: inline-block;
   float: right;
   margin-top: 10%;
@@ -168,3 +168,13 @@ Animations
 /**********************
 Media Queries
 **********************/
+
+@media (max-width: 850px) {
+  .tugboat {
+    display: none;
+  }
+  .wrapper,
+  footer {
+    width: 80%;
+  }
+}
