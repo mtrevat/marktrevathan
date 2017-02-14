@@ -89,15 +89,10 @@ p {
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-.push,
-footer {
-  height: 50px;
-  clear: both;
-}
-
 footer {
   background-color: #E8E3DC;
   width: 40%;
+  height: 50px;
 }
 
 footer span {
@@ -149,6 +144,12 @@ Classes
 .last-item {
   display: block;
   margin-bottom: 500px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /**********************
