@@ -40,7 +40,6 @@ nav li {
 
 nav li:hover {
   color: #B22222;
-  border-color: #B22222;
 }
 
 nav ul a:nth-child(2) {
@@ -170,6 +169,8 @@ Animations
 Media Queries
 **********************/
 
-@media () {
-
+@media (max-width: 950px) {
+  body {
+    background: red;
+  }
 }
