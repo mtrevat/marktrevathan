@@ -10,7 +10,6 @@ Elements
 html,
 body {
   font-size: 16px;
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
@@ -106,7 +105,7 @@ Classes
 
 .wrapper {
   min-height: 100%;
-  margin-bottom: -50px;
+  margin-bottom: 10px;
   margin-top: 5%;
   margin-left: 10%;
   width: 30%;
@@ -174,8 +173,14 @@ Media Queries
   .tugboat {
     display: none;
   }
-  .wrapper,
+  .wrapper {
+    width: 80%;
+  }
   footer {
     width: 80%;
+    margin-left: 10%;
+  }
+  footer span {
+    padding: 5px 0;
   }
 }
