@@ -24,6 +24,10 @@ nav {
   font-size: 1.25em;
 }
 
+li {
+  list-style: none;
+}
+
 nav ul {
   float: left;
   width: 100%;
@@ -61,6 +65,24 @@ h1 {
 section {
   color: #111F27;
   border-bottom: #DD4165 2px solid;
+}
+
+section ul {
+  padding-left: 0;
+}
+
+section ul:nth-child(3n+3) {
+  text-decoration: underline;
+}
+
+section ul img {
+  margin-top: 25px;
+  border: 1px solid #BC8453;
+  border-radius: 2px;
+}
+
+section ul img:hover {
+  opacity: .5;
 }
 
 section span {
