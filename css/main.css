@@ -68,7 +68,12 @@ section {
 }
 
 section ul {
+  padding: 0;
+}
+
+section ul li {
   padding-left: 0;
+  display: block;
 }
 
 section ul:nth-child(3n+3) {
