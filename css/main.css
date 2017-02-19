@@ -92,6 +92,7 @@ section ul img:hover {
 
 section span {
   display: block;
+  text-decoration: none;
 }
 
 p {
