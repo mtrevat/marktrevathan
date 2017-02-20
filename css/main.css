@@ -172,6 +172,11 @@ Classes
   color: #1DA1F2;
 }
 
+.treehouse {
+  color: #5FCF80;
+  text-decoration: none;
+}
+
 .first-item {
   display: block;
   margin-top: 20px;
