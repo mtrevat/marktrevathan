@@ -74,10 +74,12 @@ section ul {
 section ul li {
   padding-left: 0;
   display: block;
+  margin: 36px 0;
 }
 
-section ul:nth-child(3n+3) {
+section ul a {
   text-decoration: underline;
+  display: block;
 }
 
 section ul img {
@@ -92,7 +94,10 @@ section ul img:hover {
 
 section span {
   display: block;
-  text-decoration: none;
+}
+
+section span strong {
+
 }
 
 p {
