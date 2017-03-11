@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-  color: #DD4165;
+  color: #7F2926;
   font-size: 1.25em;
 }
 
@@ -59,12 +59,18 @@ h1 {
   margin-top: 40px;
   margin-bottom: -5px;
   display: inline-block;
-  border-bottom: #DD4165 2px solid;
+  border-bottom: #7F2926 2px solid;
 }
 
 section {
   color: #111F27;
-  border-bottom: #DD4165 2px solid;
+  border-bottom: #7F2926 2px solid;
+}
+
+em {
+  display: inline-block;
+  margin-top: 10px;
+  color: #D8706B;
 }
 
 section ul {
@@ -100,15 +106,39 @@ section span {
   display: block;
 }
 
-section span strong {
-
-}
-
 p {
   line-height: 2em;
 }
 
-.wrapper p::first-letter {
+footer {
+  background-color: #E8E3DC;
+  width: 40%;
+  height: 50px;
+}
+
+footer span {
+  display: block;
+  padding: 5px 25%;
+}
+
+footer span:nth-child(2n+3) {
+  color: #153075;
+}
+
+/**********************
+Classes
+**********************/
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 30%;
+  float: left;
+}
+
+.wrapper .first-letter::first-letter {
   font-size: 10em;
   color: #BC8453;
   float: left;
@@ -125,38 +155,14 @@ p {
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-  background-color: #E8E3DC;
-  width: 40%;
-  height: 50px;
-}
-
-footer span {
-  display: block;
-  padding: 5px 25%;
-}
-
-/**********************
-Classes
-**********************/
-
-.wrapper {
-  min-height: 100%;
-  margin-bottom: 10px;
-  margin-top: 5%;
-  margin-left: 10%;
-  width: 30%;
-  float: left;
-}
-
 .square {
   width: 25px;
   height: 40px;
-  background-color: #DD4165;
+  background-color: #7F2926;
 }
 
 .active {
-  border-bottom: #DD4165 2px solid;
+  border-bottom: #7F2926 2px solid;
   animation-name: border;
   animation-duration: 1s;
   animation-timing-function: ease-in;
@@ -200,11 +206,11 @@ Animations
 @keyframes border {
   0% {
     border-bottom: solid #E8E3DC 2px;
-    color: #DD4165;
+    color: #7F2926;
   }
   100% {
-    border-bottom: #DD4165 2px solid;
-    color: #DD4165;
+    border-bottom: #7F2926 2px solid;
+    color: #7F2926;
   }
 }
 /**********************
