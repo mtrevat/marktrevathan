@@ -70,7 +70,7 @@ section {
 em {
   display: inline-block;
   margin-top: 10px;
-  color: #D8706B;
+  color: #86765E;
 }
 
 section ul {
@@ -173,6 +173,14 @@ Classes
   display: block;
   margin-bottom: 500px;
 }
+
+/*svg.twitter {
+  display: inline;
+  width: 25px;
+  height: 25px;
+  color: #55ACEE;
+  fill: currentColor;
+}*/
 
 .contact-link {
   color: #1DA1F2;
