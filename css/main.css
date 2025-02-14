@@ -9,6 +9,7 @@ Elements
 
 html,
 body {
+  background-color: #E8E3DC;
   font-size: 16px;
   height: 100%;
   margin: 0;
@@ -16,9 +17,6 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-body {
-  background-color: #E8E3DC;
-}
 
 nav {
   color: #DD4165;
@@ -70,16 +68,6 @@ p {
   line-height: 105px;
 }
 
-img {
-  display: inline-block;
-  float: right;
-  margin-top: 10%;
-  width: 50%;
-  border-radius: 10px 0 0 10px;
-  border: 2px #BC8453 solid;
-  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
-}
-
 .push,
 footer {
   height: 50px;
@@ -87,6 +75,7 @@ footer {
 
 footer {
   background-color: #E8E3DC;
+  display: block;
   clear: both;
   width: 40%;
 }
@@ -101,22 +90,22 @@ footer span a {
 }
 
 /**********************
-Classes
+Classes and Id's
 **********************/
-
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
-  margin-top: 5%;
-  margin-left: 10%;
-  width: 30%;
-  float: left;
-}
 
 .square {
   width: 25px;
   height: 40px;
   background-color: #DD4165;
+}
+
+.wrapper, .wrapper-contact {
+  /* min-height: 100%; */
+  margin-bottom: 50px;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 30%;
+  float: left;
 }
 
 .active {
@@ -125,6 +114,17 @@ Classes
   animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
+}
+
+#me-and-tug {
+  display: inline-block;
+  float: right;
+  margin-top: 10%;
+  margin-right: 5em;
+  width: 50%;
+  border-radius: 10px;
+  border: 2px #BC8453 solid;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 /**********************
@@ -141,10 +141,4 @@ Animations
     color: #DD4165;
   }
 }
-/**********************
-Media Queries
-**********************/
 
-@media () {
-
-}
