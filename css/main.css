@@ -17,6 +17,9 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+.main-section h3 {
+  margin-bottom: 65px;
+}
 
 nav {
   color: #DD4165;
@@ -35,8 +38,8 @@ nav li {
   padding: 0;
 }
 
-nav ul a:nth-child(2) {
-  margin: 0 20px;
+nav li:nth-child(2) {
+  margin: 0px 20px;
 }
 
 a {
@@ -89,6 +92,18 @@ footer span a {
   color: #1DA1F2;
 }
 
+li {
+  list-style: none;
+}
+
+.contact-list li {
+  margin: 10px 0px;
+}
+
+.contact-list li:nth-child(3) {
+  margin-bottom: 20px;
+}
+
 /**********************
 Classes and Id's
 **********************/
@@ -100,7 +115,6 @@ Classes and Id's
 }
 
 .wrapper, .wrapper-contact {
-  /* min-height: 100%; */
   margin-bottom: 50px;
   margin-top: 5%;
   margin-left: 10%;
@@ -127,6 +141,33 @@ Classes and Id's
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
+.contact-link-img {
+  height: 40px;
+  width: 40px;
+}
+
+.contact-list {
+  padding: 0px;
+}
+
+.contact-list-method {
+  margin-left: 10px;
+}
+
+.pigeon {
+  border: 2px solid black;
+  padding: 2px 5px;
+}
+
+.pigeon:hover{
+  color: white;
+  background: black;
+  animation-name: pigeon;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
 /**********************
 Animations
 **********************/
@@ -142,3 +183,13 @@ Animations
   }
 }
 
+@keyframes pigeon {
+  0% {
+    background-color: #BC8453;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
