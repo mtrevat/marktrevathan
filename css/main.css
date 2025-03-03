@@ -64,7 +64,7 @@ p {
   line-height: 2em;
 }
 
-.wrapper p::first-letter {
+.first-letter::first-letter {
   font-size: 10em;
   color: #BC8453;
   float: left;
@@ -92,12 +92,9 @@ footer span a {
   color: #1DA1F2;
 }
 
-li {
-  list-style: none;
-}
-
 .contact-list li {
   margin: 10px 0px;
+  list-style: none;
 }
 
 .contact-list li:nth-child(3) {
@@ -139,6 +136,10 @@ Classes and Id's
   border-radius: 10px;
   border: 2px #BC8453 solid;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.lang-list {
+  list-style-type: square;
 }
 
 .contact-link-img {
